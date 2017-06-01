@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#primary_nav_wrap > a
+    {
+        display: none;
+    }
+    
+ #primary_nav_wrap li
+    {
+        position: relative;
+    }   
+    
+    
+#primary_nav_wrap
+{
+	margin-top:15px;
+	        z-index: 1000;
+        position: relative;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#61bd6d;
+	text-decoration:none;
+
+
+	line-height:52px;
+	padding:0 25px;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#fff
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+
+}
+@media only screen and ( max-width: 40em ) /* 640 */
+{
+    #primary_nav_wrap
+    {
+        position: relative;
+    }
+        #primary_nav_wrap > a
+        {
+        }
+        #primary_nav_wrap:not( :target ) > a:first-of-type,
+        #primary_nav_wrap:target > a:last-of-type
+        {
+            display: block;
+        }
+ 
+    /* first level */
+ 
+    #primary_nav_wrap > ul
+    {
+        height: auto;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+        #primary_nav_wrap:target > ul
+        {
+            display: block;
+        }
+        #primary_nav_wrap > ul > li
+        {
+            width: 100%;
+            float: none;
+        }
+ 
+    /* second level */
+ 
+    #primary_nav_wrap li ul
+    {
+        position: static;
+                    float: none;
+    }
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+<nav id="primary_nav_wrap" class="bg-white-smoke txt-black hi-fern text-small" role="navigation">
+    <a href="#primary_nav_wrap" title="Show navigation">Show navigation</a>
+    <a href="#" title="Hide navigation">Hide navigation</a>
+<ul>
+  <li><a href="#">FOOD</a>
+    <ul>
+      <li><a href="#">Fleisch & Wurst</a></li>
+      <li><a href="#">Milchprodukte</a></li>
+      <li><a href="#">Brotaufstriche</a></li>
+      <li><a href="#">Fertiggerichte</a></li>
+      <li><a href="#">Öle & Gewürze</a></li>
+      <li><a href="#">Rohkost</a>
+        <ul>
+          <li><a href="#">Deep Menu 1</a>
+            <ul>
+              <li><a href="#">Sub Deep 1</a></li>
+              <li><a href="#">Sub Deep 2</a></li>
+              <li><a href="#">Sub Deep 3</a></li>
+                <li><a href="#">Sub Deep 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Deep Menu 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Dies Das</a></li>
+    </ul>
+  </li>
+  <li><a href="#">DRINKS</a>
+    <ul>
+      <li><a href="#">Alkoholisches</a></li>
+      <li><a href="#">Säfte & Smoothies</a></li>
+      <li><a href="#">Limonaden</a></li>
+      <li><a href="#">Tee</a></li>
+      <li><a href="#">Milch</a></li>
+    </ul>
+  </li>
+  <li><a href="#">COSMETICS</a>
+    <ul>
+      <li class="dir"><a href="#">Dies Das</a></li>
+      <li class="dir"><a href="#">Dies Das</a>
+        <ul>
+          <li><a href="#">Category 1</a></li>
+          <li><a href="#">Category 2</a></li>
+          <li><a href="#">Category 3</a></li>
+          <li><a href="#">Category 4</a></li>
+          <li><a href="#">Category 5</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Dies Das</a></li>
+      <li><a href="#">Dies Das</a></li>
+      <li><a href="#">Dies Das</a></li>
+    </ul>
+  </li>
+  <li><a href="#">CLOTHES</a></li>
+  <li><a href="#">EVENTS</a></li>
+  <li><a href="#">BLOG</a></li>
+  <li><a href="#">ABOUT</a></li>
+</ul>
+</nav>
+</div>
+
+</body>
+</html>

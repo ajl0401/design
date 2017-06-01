@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include Font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/backgrounds.css" />
+    <link rel="stylesheet" href="../css/froala.css" />
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/fdk.min.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+        width: 16.66666666%;
+        color: rgba(255, 255, 255, 0.9);
+        -webkit-transition: opacity 0.2s ease 0s;
+        -moz-transition: opacity 0.2s ease 0s;
+        -ms-transition: opacity 0.2s ease 0s;
+        -o-transition: opacity 0.2s ease 0s;
+        transition: opacity 0.2s ease 0s;
+        float: left;
+      }
+
+      li:hover {
+        cursor: pointer;
+      }
+
+      li:hover, li:active {
+        -webkit-opacity: 0.85;
+        -moz-opacity: 0.85;
+        opacity: 0.85;
+      }
+
+      li span {
+        display: inline-block;
+        padding: 5px;
+      }
+
+      li span.color{
+        display: none;
+        cursor: text;
+      }
+
+      li:hover span.color{
+        display: inline-block;
+      }
+
+      li:hover span.name{
+        display: none;
+      }
+    </style>
+
+    <script>
+      var designNice = function () {
+        var height = document.documentElement.clientHeight - 100;
+
+        var lis = document.querySelectorAll('ul li');
+        for (var i = 0; i < lis.length; i++) {
+          lis[i].style.height = height / 4 + 'px';
+        }
+      }
+
+      window.onload = designNice;
+
+      window.onresize = designNice;
+    </script>
+  </head>
+  <body ontouchstart="">
+    <h1 class="text-center text-xxlarge text-thin">Froala Design Colors</h1>
+
+    <ul class="text-small">
+      <li style="background: #61BD6D;"><span class="name">FERN</span><span class="color">#61BD6D</span></li>
+      <li style="background: #1ABC9C;"><span class="name">MOUNTAIN MEADOW</span><span class="color">#1ABC9C</span></li>
+      <li style="background: #54ACD2;"><span class="name">PICTON BLUE</span><span class="color">#54ACD2</span></li>
+      <li style="background: #2C82C9;"><span class="name">MARINER</span><span class="color">#2C82C9</span></li>
+      <li style="background: #9365B8;"><span class="name">WISTERIA</span><span class="color">#9365B8</span></li>
+      <li style="background: #475577;"><span class="name">CHAMBRAY</span><span class="color">#475577</span></li>
+    </ul>
+
+    <ul class="text-small">
+      <li style="background: #41A85F;"><span class="name">CHATEAU GREEN</span><span class="color">#41A85F</span></li>
+      <li style="background: #00A885;"><span class="name">PERSIAN GREEN</span><span class="color">#00A885</span></li>
+      <li style="background: #3D8EB9;"><span class="name">CURIOUS BLUE</span><span class="color">#3D8EB9</span></li>
+      <li style="background: #2969B0;"><span class="name">DENIM</span><span class="color">#2969B0</span></li>
+      <li style="background: #553982;"><span class="name">BLUE GEM</span><span class="color">#553982</span></li>
+      <li style="background: #28324e;"><span class="name">BLUE WHALE</span><span class="color">#28324e</span></li>
+    </ul>
+
+    <ul class="text-small">
+      <li style="background: #F7DA64;"><span class="name">ENERGY</span><span class="color">#F7DA64</span></li>
+      <li style="background: #FBA026;"><span class="name">NEON CARROT</span><span class="color">#FBA026</span></li>
+      <li style="background: #EB6B56;"><span class="name">TERRA COTTA</span><span class="color">#EB6B56</span></li>
+      <li style="background: #E25041;"><span class="name">CINNABAR</span><span class="color">#E25041</span></li>
+      <li style="background: #A38F84;"><span class="name">ALMOND FROST</span><span class="color">#A38F84</span></li>
+      <li style="background: #EFEFEF; color: #676767"><span class="name">WHITE SMOKE</span><span class="color">#EFEFEF</span></li>
+    </ul>
+
+    <ul class="text-small">
+      <li style="background: #FAC51C;"><span class="name">TURBO</span><span class="color">#FAC51C</span></li>
+      <li style="background: #f37934;"><span class="name">SUN</span><span class="color">#f37934</span></li>
+      <li style="background: #D14841;"><span class="name">VALENCIA</span><span class="color">#D14841</span></li>
+      <li style="background: #B8312F;"><span class="name">WELL READ</span><span class="color">#B8312F</span></li>
+      <li style="background: #75706B;"><span class="name">IRON GRAY</span><span class="color">#75706B</span></li>
+      <li style="background: #D1D5D8; color: #676767"><span class="name">IRON</span><span class="color">#D1D5D8</span></li>
+    </ul>
+  </body>
+</html>
